@@ -1,0 +1,13 @@
+<h1>질문에 대한 선택지 리스트</h1>
+<h2>질문</h2>
+{{question}}
+<h2>선택지 리스트</h2>
+{% if choice_list %}
+<ul>
+    {% for choice in choice_list %}
+        <li>{{ choice.choice_text }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
