@@ -1,0 +1,6 @@
+<h1>한번도 투표하지 않은 질문 리스트</h1>
+{% if zerovote_question_list %}
+    <p>{{zerovote_question_list}}</p>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
