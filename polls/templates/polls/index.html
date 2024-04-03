@@ -1,3 +1,7 @@
+{% load static %}
+<link rel = "stylesheet" href="{% static 'polls/style.css' %}">
+
+<body>
 <h1>모든 질문 리스트</h1>
 {% if latest_question_list %}
     <ul>
@@ -8,5 +12,6 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+</body>
 
 
